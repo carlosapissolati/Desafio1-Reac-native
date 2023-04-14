@@ -6,6 +6,12 @@ export const styles = StyleSheet.create({
     backgroundColor: '#0D0D0D',
     padding: 14
   },
+  logoContainer: {
+    marginTop: 50,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   input: {
     flex: 1,
     height: 54,
@@ -34,16 +40,26 @@ export const styles = StyleSheet.create({
     marginTop: 36,
     marginBottom: 42
   },
+  formList: {
+    width: '100%'
+  },
   formDados: {
     width: '100%',
-    flexDirection: 'row'
-
+    flexDirection: 'row',
+    alignContent:"center",
+    justifyContent: 'center'
+  },
+  imgListContainer: {
+    marginTop: 50,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   listEmptyText: {
     color: '#808080',
     fontSize: 14,
     textAlign: 'center',
-    marginTop: 120
+    marginTop: 30
   },
   logo:{
     width : 110.34,
@@ -65,7 +81,8 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontStyle: "normal",
     fontWeight: "bold",
-    marginRight:8
+    marginRight: 8,
+    marginLeft: 8
   },
   eventDados:{
     color: '#FFF',
