@@ -11,8 +11,20 @@ export function Home() {
   
   function handleTarefaAdd() {
 
-    setTarefas(prevState => [...prevState, {check:0, descricao:tarefaName}]);
-    setTarefaName('');
+    if(tarefaName != "")
+    {
+      setTarefas(prevState => [...prevState, {check:0, descricao:tarefaName}]);
+      setTarefaName('');
+    }
+    else
+    {
+      Alert.alert("Adicionar", `O campo adicone uma nova tarefa está em branco.`, [
+        {
+          text: 'Ok',
+        }
+      ])
+    }
+
   }
 
 
@@ -55,9 +67,9 @@ export function Home() {
         />
         
         <TouchableOpacity style={styles.button} onPress={handleTarefaAdd}>
-          <Text style={styles.buttonText}>
-            +
-          </Text>
+        <Image style ={styles.layer}
+          source={require("../../../assets/layer.png")}
+        />
         </TouchableOpacity>
       </View>
 

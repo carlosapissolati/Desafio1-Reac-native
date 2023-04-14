@@ -65,6 +65,10 @@ export const styles = StyleSheet.create({
     width : 110.34,
     height: 32
   },
+  layer:{
+    width : 16,
+    height: 16
+  },
   listEmptyImg:{
     width : 56,
     height: 56
